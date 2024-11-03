@@ -1,6 +1,12 @@
 import sys
 from networksecurity.logging import logger
 
+# import sys
+# import os
+
+# # Add the root directory of the project to sys.path
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
 class NetworkSecurityException(Exception):
     def __init__(self,error_message,error_details:sys):
         self.error_message = error_message
